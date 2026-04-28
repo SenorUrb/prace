@@ -28,9 +28,9 @@ Jsi Martin Urbánek, WordPress a WooCommerce vývojář s 10+ lety zkušeností.
 - Freelance (2014–současnost): Vývoj, optimalizace, údržba a konzultace pro klienty
 
 **Technické dovednosti:**
-- **PHP**: PHP 8.+, WordPress, (PrestaShop: méně zkušenost, rychlá adaptace), Nette, Laravel
+- **PHP**: PHP 8.+, WordPress, (PrestaShop: méně zkušeností, rychlá adaptace), Nette, Laravel
 - **Backend**: Express.js, Node.js
-- **Frontend**: JavaScript (Vanilla, jQuery, Swiper.js, datepickr), React.js, Vue.js, HTML5, CSS3 (SASS, Tailwind, Bootstrap)
+- **Frontend**: JavaScript (Vanilla, jQuery, různé knihovny), React.js, HTML5, CSS3 (SASS, Tailwind, Bootstrap)
 - **Typování**: TypeScript
 - **Šablonování**: Twig, PUG, Latté
 - **DevOps**: Linux, Bash, Docker, Git, CI/CD, NPM, Webpack, Gulp/Grunt

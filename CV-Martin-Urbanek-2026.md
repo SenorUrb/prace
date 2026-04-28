@@ -36,7 +36,11 @@ Klíčové zkušenosti
 - Návrh licenčního systému a provoz e‑shopu pro distribuci pluginů
 
 ### Freelance Web Developer (2014–současnost)
-- Long‑term maintenance a custom vývoj (multisite, importy/ exporty, performance)
+- Komplexní vývoj webů a e-shopů na míru (WordPress, WooCommerce, vlastní PHP řešení)
+- Návrh architektury, custom pluginy, šablony, API integrace, optimalizace výkonu a bezpečnosti
+- Správa serverů, DevOps (Docker, GitLab CI), monitoring, automatizace nasazení
+- Frontend (React, Vanilla JS, jQuery), moderní CSS (SASS, Tailwind)
+- Dlouhodobá údržba, importy/exporty dat, školení klientů, technické konzultace
 
 Vybrané projekty
 ----------------
