@@ -1,4 +1,5 @@
 
+
 ![Martin Urbánek](assets/img/martin_urbanek.jpeg)
 
 # Martin Urbánek
@@ -42,7 +43,7 @@ Klíčové zkušenosti
 - Komplexní vývoj webů a e-shopů na míru (WordPress, WooCommerce, vlastní PHP řešení)
 - Návrh architektury, custom pluginy, šablony, API integrace, optimalizace výkonu a bezpečnosti
 - Správa serverů, DevOps (Docker, Bitbucket Pipelines, GitHub CI/CD), monitoring, automatizace nasazení
-- Frontend (React, Vanilla JS, jQuery), moderní CSS (SASS, Tailwind)
+- Frontend (React, Vanilla JS, jQuery), moderní CSS (SASS, Bootstrap, Tailwind)
 - Dlouhodobá údržba, importy/exporty dat, školení klientů, technické konzultace
 
 Vybrané projekty
@@ -56,7 +57,7 @@ Technický stack
 ---------------
 
 - **Backend:** PHP 8+ (WordPress, Nette, Laravel)
-- **Frontend:** JavaScript (React, Vue.js, Vanilla, jQuery), HTML5, CSS3 (SASS, Tailwind)
+- **Frontend:** JavaScript (React, Vue.js, Vanilla, jQuery), HTML5, CSS3 (SASS, Bootstrap, Tailwind)
 - **DB:** MySQL / MariaDB / PostgreSQL
 - **DevOps:** Docker, Linux, Bash, Git, CI/CD (Bitbucket Pipelines, GitHub)
 - **Testing & QA:** Cypress, PHPUnit, PHPStan, PHP Rector
