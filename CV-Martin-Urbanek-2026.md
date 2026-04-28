@@ -1,3 +1,6 @@
+
+![Martin Urbánek](assets/img/martin_urbanek.jpeg)
+
 # Martin Urbánek
 
 **Senior WordPress & WooCommerce Developer** · Brno (remote / hybrid)
@@ -17,7 +20,7 @@ Co přináším
 - 10+ let zkušeností s WordPress/WooCommerce, autor komerčních pluginů pro český trh
 - Silné zkušenosti s API (REST) a napojováním interních systémů
 - Rozsáhlé zkušenosti s výkonnostní optimalizací (cache, CDN, dotazy)
-- DevOps návyky: Docker, GitLab CI, monitoring a stabilní nasazení
+- DevOps návyky: Docker, Bitbucket Pipelines, GitHub CI/CD, monitoring a stabilní nasazení
 - Testování: Cypress (E2E), PHPUnit, static analysis (PHPStan), automatická refaktorizace (Rector)
 
 Klíčové zkušenosti
@@ -38,7 +41,7 @@ Klíčové zkušenosti
 ### Freelance Web Developer (2014–současnost)
 - Komplexní vývoj webů a e-shopů na míru (WordPress, WooCommerce, vlastní PHP řešení)
 - Návrh architektury, custom pluginy, šablony, API integrace, optimalizace výkonu a bezpečnosti
-- Správa serverů, DevOps (Docker, GitLab CI), monitoring, automatizace nasazení
+- Správa serverů, DevOps (Docker, Bitbucket Pipelines, GitHub CI/CD), monitoring, automatizace nasazení
 - Frontend (React, Vanilla JS, jQuery), moderní CSS (SASS, Tailwind)
 - Dlouhodobá údržba, importy/exporty dat, školení klientů, technické konzultace
 
@@ -55,7 +58,7 @@ Technický stack
 - **Backend:** PHP 8+ (WordPress, Nette, Laravel)
 - **Frontend:** JavaScript (React, Vue.js, Vanilla, jQuery), HTML5, CSS3 (SASS, Tailwind)
 - **DB:** MySQL / MariaDB / PostgreSQL
-- **DevOps:** Docker, Linux, Bash, Git, CI/CD (GitLab)
+- **DevOps:** Docker, Linux, Bash, Git, CI/CD (Bitbucket Pipelines, GitHub)
 - **Testing & QA:** Cypress, PHPUnit, PHPStan, PHP Rector
 - **Nástroje:** Webpack, Gulp, NPM, Figma, Photoshop, Affinity Studio
 
