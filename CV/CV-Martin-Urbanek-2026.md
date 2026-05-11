@@ -30,14 +30,22 @@ Klíčové zkušenosti
 ### České kormidlo — WordPress Developer (2025)
 - Vývoj custom pluginu s API integracemi pro cestovní kancelář
 - Úpravy WooCommerce checkoutu a optimalizace UX
+- Optimalizace výkonu pro vysokou návštěvnost a rychlé načítání
+- přechod na php 8.3, implementace typed properties, union types, match expressions, a dalších moderních funkcí pro zlepšení kvality a údržby kódu
+
 
 ### MetaIT — WordPress Developer (2023–2024)
 - Projekt Prague.eu: navrhl a připravil jsem REST API pro propojení s několika interními systémy
 - Vývoj vlastních Gutenberg bloků a integrace s interními službami
+- Optimalizace výkonu a bezpečnosti pro veřejné API a frontend
+- Spolupráce s frontend týmem na implementaci React komponent a optimalizaci načítání dat
+- Vytvoření dokumentace pro API a školení interního týmu na jeho využívání
 
 ### České pluginy — Founder & Developer (2020–současnost)
-- Vývoj a distribuce pluginů: QR platby, Comgate, GoSMS, Fio bank API
+- Vývoj a distribuce WooCommerce pluginů: QR platby, Comgate, GoSMS, Fio bank API, Fakturoid
 - Návrh licenčního systému a provoz e‑shopu pro distribuci pluginů
+- Komplexní správa projektů od vývoje, přes marketing, až po zákaznickou podporu
+- Vývoj custom řešení pro klienty, včetně API integrací a optimalizace výkonu
 
 ### Freelance Web Developer (2014–současnost)
 - Komplexní vývoj webů a e-shopů na míru (WordPress, WooCommerce, vlastní PHP řešení)
@@ -45,23 +53,31 @@ Klíčové zkušenosti
 - Správa serverů, DevOps (Docker, Bitbucket Pipelines, GitHub CI/CD), monitoring, automatizace nasazení
 - Frontend (React, Vanilla JS, jQuery), moderní CSS (SASS, Bootstrap, Tailwind)
 - Dlouhodobá údržba, importy/exporty dat, školení klientů, technické konzultace
+- Optimalizace pro SEO, rychlost a konverze, včetně implementace cache, CDN, a dalších výkonových technik
+- Vytváření custom řešení pro specifické potřeby klientů, včetně komplexních API integrací a optimalizace pro vysokou návštěvnost
+- Spolupráce s designéry a dalšími vývojáři na komplexních projektech, zajištění kvality kódu a dodržování termínů
+- Pravidelná komunikace s klienty, poskytování technické podpory a školení pro správu jejich webů a e-shopů
+
+### Další zkušenosti
+- Shockworks s.r.o. - Frontend Developer (2015–2016)
+- Studio David Geč - Projektový manažer (2014–2015)
+- Amperprojekt s.r.o. - Projektant elektroinstalací (2008–2014)
 
 Vybrané projekty
 ----------------
 - Prague.eu — REST API integrace a výkonová optimalizace
-- České pluginy — platební a bankovní integrace
-- coworkscan.io — katalog (WordPress)
-- mksnj.cz — multisite nasazení kulturního centra
+- České pluginy — komerční WooCommerce pluginy s integracemi pro české banky, platební a SMS brány, napojení na fakturační služby
+- mksnj.cz — multisite pro městské kulturní středisko v Novém Jičíně
 
 Technický stack
 ---------------
 
 - **Backend:** PHP 8+ (WordPress, Nette, Laravel)
-- **Frontend:** JavaScript (React, Vue.js, Vanilla, jQuery), HTML5, CSS3 (SASS, Bootstrap, Tailwind)
+- **Frontend:** JavaScript (React, Vanilla, jQuery), HTML5, CSS3 (SASS, LESS, Bootstrap, Tailwind)
 - **DB:** MySQL / MariaDB / PostgreSQL
 - **DevOps:** Docker, Linux, Bash, Git, CI/CD (Bitbucket Pipelines, GitHub)
 - **Testing & QA:** Cypress, PHPUnit, PHPStan, PHP Rector
-- **Nástroje:** Webpack, Gulp, NPM, Figma, Photoshop, Affinity Studio
+- **Nástroje:** Webpack, Gulp, NPM, Figma, Photoshop, XD, Affinity Studio
 
 Bezpečnost & škálovatelnost
 --------------------------
@@ -81,19 +97,11 @@ Jazyky
 - Čeština — rodilý mluvčí
 - Angličtina — pokročilá (B2)
 
-Doporučení pro zaměstnavatele
-----------------------------
-
-- Okamžitě převzetí technické odpovědnosti za WordPress/WooCommerce projekty
-- Rychlé zavedení testovacího toolingu a CI postupů
-- PrestaShop — základní praktické povědomí; rychlá adaptace a ochota převzít platformu
 
 Kontakt
 -------
 
 - Portfolio: https://martinurbanek.cz/portfolio
-- Email: kontakt@martinurbanek.cz — rád sjednám krátký technický hovor nebo ukázku kódu
-
----
-
-Poznámka: lze rychle zkrátit na jednostránkovou verzi nebo upravit pro konkrétní pozici.
+- Email: kontakt@martinurbanek.cz 
+- Telefon: +420 733 256 209
+- LinkedIn: https://www.linkedin.com/in/martin-urb%C3%A1nek-29b9343a/
