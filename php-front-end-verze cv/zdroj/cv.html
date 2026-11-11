@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>Martin Urbánek – CV</title>
+<!--
+  Zdroj CV „Senior Web Developer (PHP / Frontend)“.
+  Export do PDF (z kořene repozitáře):
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu \
+    --no-pdf-header-footer --virtual-time-budget=10000 \
+    --print-to-pdf="php-front-end-verze cv/Martin_Urbanek_CV_2026-11.pdf" \
+    "file://$PWD/php-front-end-verze cv/zdroj/cv.html"
+-->
+<style>
+  /* Statické TTF (ne variabilní font z Google Fonts), aby Chrome vložil do PDF
+     běžné TrueType písmo místo Type 3 – lépe ho čtou prohlížeče i ATS systémy. */
+  @font-face { font-family: 'Noto Sans CV'; src: url('fonts/NotoSans-Regular.ttf') format('truetype'); font-weight: 400; }
+  @font-face { font-family: 'Noto Sans CV'; src: url('fonts/NotoSans-Bold.ttf') format('truetype'); font-weight: 700; }
+
+  :root {
+    --navy: #17324d;
+    --blue: #23577c;
+    --gold: #c7a363;
+    --muted: #7f90a1;
+    --gray: #868e96;
+    --text: #2b2f33;
+    --side-text: #e3e8ed;
+    --side-muted: #b9c4cf;
+  }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #fff; }
+  body {
+    font-family: 'Noto Sans CV', sans-serif;
+    color: var(--text);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  .page {
+    position: relative;
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    break-after: page;
+  }
+  .page:last-child { break-after: auto; }
+
+  /* ---------- postranní panel ---------- */
+  .side {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 65mm;
+    background: var(--navy);
+    color: var(--side-text);
+  }
+  .side .band { height: 44mm; background: var(--blue); }
+  .side .photo {
+    position: absolute;
+    left: 12.5mm; top: 14.5mm;
+    width: 33mm; height: 33mm;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.5mm solid rgba(255, 255, 255, 0.85);
+  }
+  .side .inner {
+    position: absolute;
+    top: 51.5mm; left: 12.7mm; right: 9.5mm;
+  }
+  .side .name { font-size: 15pt; font-weight: 700; color: #fff; line-height: 1.2; }
+  .side .role { font-size: 7.3pt; color: var(--side-muted); line-height: 1.45; margin-top: 1mm; margin-bottom: 4.5mm; }
+  .side h2 {
+    font-size: 10pt; font-weight: 700; color: #fff;
+    text-transform: uppercase; letter-spacing: 0.02em;
+    padding-bottom: 0.9mm;
+    border-bottom: 0.45mm solid var(--gold);
+    margin: 5.5mm 0 1.8mm;
+  }
+  .side p, .side li { font-size: 8.2pt; line-height: 1.5; color: var(--side-text); }
+  .side ul { list-style: none; }
+  .side li { position: relative; padding-left: 3.6mm; margin-bottom: 0.5mm; }
+  .side li::before {
+    content: ""; position: absolute; left: 0.5mm; top: 1.7mm;
+    width: 1mm; height: 1mm; border-radius: 50%; background: var(--gold);
+  }
+  .side .group { margin-bottom: 2.2mm; }
+  .side .group b { display: block; font-size: 8.4pt; color: #fff; line-height: 1.5; }
+
+  /* ---------- hlavní sloupec ---------- */
+  .main {
+    position: absolute;
+    left: 76mm; right: 13mm; top: 0; bottom: 0;
+  }
+  .main .name { margin-top: 9.5mm; font-size: 26pt; font-weight: 700; color: var(--navy); line-height: 1.15; }
+  .main .title { font-size: 11pt; color: var(--muted); margin-top: 1mm; }
+  .main .bar { width: 28.5mm; height: 1.1mm; background: var(--gold); margin-top: 7mm; }
+  .main.cont { padding-top: 13mm; }
+  .main.cont h2:first-child { margin-top: 0; }
+  .main h2 {
+    font-size: 10pt; font-weight: 700; color: var(--navy);
+    text-transform: uppercase; letter-spacing: 0.03em;
+    border-bottom: 0.3mm solid var(--navy);
+    padding-bottom: 0.6mm;
+    margin: 5mm 0 1.8mm;
+  }
+  .main p { font-size: 8.9pt; line-height: 1.45; }
+  .main ul { list-style: none; }
+  .main li { position: relative; font-size: 8.9pt; line-height: 1.45; padding-left: 3.8mm; margin-bottom: 0.6mm; }
+  .main li::before {
+    content: ""; position: absolute; left: 0.6mm; top: 1.8mm;
+    width: 1mm; height: 1mm; border-radius: 50%; background: var(--gold);
+  }
+  .job { margin-top: 2.4mm; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; margin-bottom: 0.8mm; }
+  .job-head strong { font-size: 10.5pt; color: var(--navy); }
+  .job-head span { font-size: 8.6pt; color: var(--gray); white-space: nowrap; }
+  .proj { margin-top: 1.8mm; }
+  .proj strong { display: block; font-size: 9.5pt; color: var(--navy); line-height: 1.4; }
+  .proj p { padding-left: 3.8mm; font-size: 8.9pt; }
+  .footer { position: absolute; right: 13mm; bottom: 7.5mm; font-size: 7pt; color: var(--gray); }
+</style>
+</head>
+<body>
+
+<!-- ================= STRANA 1 ================= -->
+<section class="page">
+  <aside class="side">
+    <div class="band"></div>
+    <img class="photo" src="foto.png" alt="Martin Urbánek">
+    <div class="inner">
+      <div class="name">Martin Urbánek</div>
+      <div class="role">Senior Web Developer<br>PHP / Frontend / WordPress</div>
+
+      <h2>Kontakt</h2>
+      <p>Brno / remote / hybrid</p>
+      <p><a href="mailto:kontakt@martinurbanek.cz">kontakt@martinurbanek.cz</a></p>
+      <p><a href="tel:+420733256209">+420 733 256 209</a></p>
+      <p><a href="https://martinurbanek.cz/portfolio">martinurbanek.cz/portfolio</a></p>
+      <p><a href="https://www.linkedin.com/in/martin-urb%C3%A1nek-29b9343a/">LinkedIn: Martin Urbánek</a></p>
+
+      <h2>Hlavní stack</h2>
+      <ul>
+        <li>PHP 8+, WordPress, WooCommerce</li>
+        <li>Laravel, Nette, Latte</li>
+        <li>HTML, CSS, JavaScript, React</li>
+        <li>React Native</li>
+        <li>Tailwind CSS, SASS, Bootstrap</li>
+        <li>MySQL, MariaDB, PostgreSQL</li>
+        <li>Docker, Linux, Git, CI/CD, Jira</li>
+      </ul>
+
+      <h2>Silné stránky</h2>
+      <ul>
+        <li>End-to-end řešení projektů</li>
+        <li>API integrace a vlastní pluginy</li>
+        <li>Výkon, Core Web Vitals, SEO</li>
+        <li>Bezpečnost a udržitelnost kódu</li>
+        <li>Samostatnost i spolupráce v týmu</li>
+      </ul>
+
+      <h2>Jazyky</h2>
+      <p>Čeština – rodilý mluvčí</p>
+      <p>Angličtina – B2</p>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="name">Martin Urbánek</div>
+    <div class="title">Senior Web Developer (PHP / Frontend)</div>
+    <div class="bar"></div>
+
+    <h2>Profil</h2>
+    <p>Webový vývojář s více než 12 lety praxe ve vývoji webových aplikací, prezentačních webů a e-commerce řešení. Umím pokrýt frontend i backend: od implementace podle designu přes WordPress šablony a pluginy až po API integrace, výkon a stabilní provoz. Dlouhodobě stavím na PHP, WordPressu a WooCommerce, v posledních projektech pracuji také s Laravelem a Nette, včetně backend API pro mobilní aplikace v React Native.</p>
+
+    <h2>Co přináším</h2>
+    <ul>
+      <li>12+ let zkušeností s vývojem webových aplikací, prezentačních webů a e-shopů.</li>
+      <li>Silné zkušenosti s PHP, WordPressem, WooCommerce, vlastním vývojem a REST API.</li>
+      <li>Laravel a Nette v praxi: interní webová aplikace a backend API pro mobilní aplikace v React Native.</li>
+      <li>Frontendový přesah: HTML, CSS, JavaScript, React, Tailwind, responzivita a práce podle designu.</li>
+      <li>Praktický přístup k UX: delší texty, chybějící obsah, různé poměry obrázků a reálný provoz.</li>
+      <li>Optimalizace výkonu, Core Web Vitals, technické SEO, cache, CDN a databázové dotazy.</li>
+      <li>DevOps návyky: Docker, Linux, Git, CI/CD, monitoring a stabilní nasazení.</li>
+    </ul>
+
+    <h2>Klíčové zkušenosti</h2>
+    <div class="job">
+      <div class="job-head"><strong>Zdravý podnik</strong><span>Web Developer, dlouhodobá spolupráce</span></div>
+      <ul>
+        <li>Rozšíření interního systému o aplikaci kartotéky pro fyzioterapeuty s rezervačním systémem (Laravel).</li>
+        <li>Vývoj nového webu.</li>
+        <li>Dlouhodobá správa webu.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><strong>České kormidlo</strong><span>PHP / WordPress Developer, 2025</span></div>
+      <ul>
+        <li>Vývoj custom pluginu s API integracemi pro cestovní kancelář.</li>
+        <li>Úpravy WooCommerce checkoutu a optimalizace uživatelského rozhraní.</li>
+        <li>Optimalizace výkonu pro vyšší návštěvnost a rychlé načítání.</li>
+        <li>Migrace projektu na PHP 8.3 a využití moderních prvků jazyka.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><strong>MetaIT</strong><span>Web Developer, 2023–2024</span></div>
+      <ul>
+        <li>Prague.eu: návrh a implementace REST API pro propojení interních systémů.</li>
+        <li>Vývoj vlastních Gutenberg bloků a integrace interních služeb.</li>
+        <li>Optimalizace výkonu a bezpečnosti veřejného API i frontendu.</li>
+        <li>Spolupráce s frontend týmem na React komponentách a načítání dat.</li>
+      </ul>
+    </div>
+  </main>
+
+  <div class="footer">Martin Urbánek – CV – 1</div>
+</section>
+
+<!-- ================= STRANA 2 ================= -->
+<section class="page">
+  <aside class="side">
+    <div class="band"></div>
+    <img class="photo" src="foto.png" alt="Martin Urbánek">
+    <div class="inner">
+      <div class="name">Martin Urbánek</div>
+      <div class="role">Senior Web Developer<br>PHP / Frontend / WordPress</div>
+
+      <h2>Technologie</h2>
+      <div class="group"><b>Backend</b><p>PHP 8+, Laravel, Nette, WordPress, WooCommerce</p></div>
+      <div class="group"><b>Frontend</b><p>HTML5, CSS3, SASS, Tailwind, JavaScript, React, Vue, Alpine.js, jQuery</p></div>
+      <div class="group"><b>Mobilní aplikace</b><p>React Native</p></div>
+      <div class="group"><b>Šablony</b><p>Latte, Twig (základně)</p></div>
+      <div class="group"><b>DB</b><p>MySQL, MariaDB, PostgreSQL</p></div>
+      <div class="group"><b>QA</b><p>Cypress, PHPUnit, PHPStan, Rector</p></div>
+      <div class="group"><b>Nástroje</b><p>Jira, Figma, Photoshop, Affinity Designer, Adobe XD</p></div>
+
+      <h2>Vzdělání</h2>
+      <p>SPŠE Frenštát pod Radhoštěm (2005)</p>
+      <p>Mechanik elektronických zařízení</p>
+    </div>
+  </aside>
+
+  <main class="main cont">
+    <h2>Klíčové zkušenosti – pokračování</h2>
+    <div class="job">
+      <div class="job-head"><strong>České pluginy</strong><span>Founder &amp; Developer, 2020–současnost</span></div>
+      <ul>
+        <li>Vývoj a distribuce komerčních WooCommerce pluginů pro český trh.</li>
+        <li>Integrace bank, platebních bran, SMS bran a fakturačních systémů.</li>
+        <li>Návrh licenčního systému a provoz vlastního e-shopu.</li>
+        <li>Kompletní odpovědnost za vývoj, infrastrukturu, marketing i zákaznickou podporu.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><strong>Freelance Web Developer</strong><span>2014–současnost</span></div>
+      <ul>
+        <li>Vývoj webových aplikací, prezentačních webů a e-shopů na míru.</li>
+        <li>Návrh architektury, API integrace, custom šablony, pluginy a Gutenberg bloky.</li>
+        <li>Frontend vývoj v HTML, CSS, JavaScriptu a Reactu, včetně responzivity a práce podle designu.</li>
+        <li>Optimalizace výkonu, SEO, Core Web Vitals, bezpečnost a dlouhodobá údržba.</li>
+        <li>Docker, CI/CD, automatizace nasazení, správa serverů a monitoring.</li>
+        <li>Spolupráce s klienty, agenturami, designéry a dalšími vývojáři.</li>
+      </ul>
+    </div>
+
+    <h2>Vybrané projekty</h2>
+    <div class="proj">
+      <strong>Prague.eu</strong>
+      <p>Návrh REST API, integrace interních systémů, vývoj vlastních Gutenberg bloků, optimalizace výkonu a bezpečnosti.</p>
+    </div>
+    <div class="proj">
+      <strong>Tichavský.cz</strong>
+      <p>Implementace firemního webu podle dodaného designu se zaměřením na frontend, responzivitu a uživatelský zážitek.</p>
+    </div>
+    <div class="proj">
+      <strong>České pluginy</strong>
+      <p>Vývoj a provoz komerčních WooCommerce pluginů: QR platby, Comgate, GoSMS, Fio bank API, Fakturoid.</p>
+    </div>
+    <div class="proj">
+      <strong>mksnj.cz</strong>
+      <p>Multisite řešení pro městské kulturní středisko v Novém Jičíně, správa více webů v rámci jedné instalace.</p>
+    </div>
+
+    <h2>Aktuální směr</h2>
+    <p>Na dalších projektech stavím backend API v Laravelu a Nette pro aplikace s frontendem v React Native, které jsou zatím v beta verzi. Kromě Reactu mám zkušenosti také s Tailwindem a Vue a orientuji se v technologiích jako Twig nebo Alpine.js. Chci se dál rozvíjet v moderním PHP, frontendovém vývoji a projektech, které dávají smysl uživatelům i byznysu.</p>
+  </main>
+
+  <div class="footer">Martin Urbánek – CV – 2</div>
+</section>
+
+</body>
+</html>
