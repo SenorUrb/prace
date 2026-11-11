@@ -8,7 +8,7 @@ Webové aplikace, prezentační weby a e-shopy vyvíjím přes 12 let, na fronte
 
 Trochu mě zarazilo, že v inzerátu uvádíte PHP 7, které už několik let nemá bezpečnostní podporu. V nadpisu máte PHP 8, takže možná jde jen o neaktualizovaný text. Pokud vám ale nějaké projekty na PHP 7 ještě běží, rád pomůžu s jejich převodem. V Českém kormidle jsem převedl projekt na PHP 8.3, takže umím pracovat se starším kódem i s moderním PHP 8.
 
-Dlouho jsem se specializoval na WordPress a WooCommerce. Vyvíjím pro ně komerční pluginy napojené na banky, platební brány a fakturační systémy (České pluginy). Mám ale praxi i s oběma frameworky z vašeho inzerátu. Pro firmu Zdravý podnik, se kterou spolupracuji už řadu let, jsem naposledy v Laravelu rozšiřoval interní systém o kartotéku pro fyzioterapeuty s rezervačním systémem. Nette i Laravel jsem použil také jako backend API pro aplikace s frontendem v React Native, které jsou zatím v betě. Proto mě láká i vaše nová divize mobilních aplikací.
+Dlouho jsem se specializoval na WordPress a WooCommerce. Vyvíjím pro ně komerční pluginy napojené na banky, platební brány a fakturační systémy (České pluginy). Mám ale praxi i s oběma frameworky z vašeho inzerátu. Pro firmu Zdravý podnik, se kterou spolupracuji už řadu let, jsem naposledy v Laravelu rozšiřoval interní systém o kartotéku pro fyzioterapeuty s rezervačním systémem. Nette i Laravel jsem použil také jako backend API pro aplikace s frontendem v React Native, které jsou zatím v betě. V jedné z nich používám i Redis. Proto mě láká i vaše nová divize mobilních aplikací.
 
 Na kvalitu kódu dbám i mimo samotný vývoj. Píšu testy (PHPUnit, Cypress), kód kontroluji statickou analýzou (PHPStan, Rector) a nasazuji přes Docker a CI/CD.
 
